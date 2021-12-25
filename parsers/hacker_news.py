@@ -20,8 +20,8 @@ def need_keyword():
 
 
 def input_validation():
-    if (input_string := input("Add keyword - 1 \nContinue - any other key\nEnter: ")).isdecimal():
-        return True if input_string == "1" else False
+    if input("Add keyword - 1 \nContinue - any other key\nEnter: ") == "1":
+        return True
     else:
         return False
 
